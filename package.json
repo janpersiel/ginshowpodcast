@@ -1,9 +1,9 @@
 {
   "version": "1.0.0",
-  "name": "uiengineering",
+  "name": "ginshowpodcast",
   "license": "UNLICENSED",
-  "repository": "git@github.com:dennisreimann/uiengineering.git",
-  "description": "www.uiengineering.de",
+  "repository": "git@github.com:janpersiel/ginshowpodcast.git",
+  "description": "www.gin.show",
   "engines": {
     "node": ">=7.1.0"
   },
@@ -19,7 +19,7 @@
     "sketch": "rm -rf sketch && html-sketchapp --config lib/html-sketchapp.js && open -a Sketch",
     "start": "npm run cleanup && gulp develop --dev",
     "build": "npm run cleanup && gulp build",
-    "prod": "npm run cleanup && gulp production --assetHost=cdn.uiengineering.de",
+    "prod": "npm run cleanup && gulp production --assetHost=cdn.gin.show",
     "build-and-deploy": "npm run prod && npm run deploy",
     "deploy": "npm run deploy:assets && npm run deploy:site",
     "deploy:assets": "$npm_package_config_deployment_command --exclude-from=.rsync-exclude-assets dist/fonts dist/images dist/mp3s dist/styles $npm_package_config_deployment_target",
