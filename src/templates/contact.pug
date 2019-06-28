@@ -1,0 +1,49 @@
+extends ../templates/page
+
+include /section/block.pug
+include /section/container.pug
+include /section/section.pug
+
+block vars
+  - const title = "Contact"
+  - const episodes = mvb.articles.slice(0, 2)
+  - const header = { title: title, type: "contact" }
+
+block main
+  +section(true)
+    :marked
+      UI engineering ist keine Agentur, kein Softwarehaus, kein Designstudio.
+      Mit dieser Website, dem Podcast und allen Inhalten möchten wir unsere
+      Erfahrungen teilen, Interviews machen, Diskussionen führen, die eine
+      Arbeitserleichterung für Designer, Entwickler und Fachlichkeitsrepräsentaten
+      mit sich bringt.
+
+      Wir, das sind …
+
+  +section(false)
+    +container()
+      +block()
+        :marked
+          #### [Belinda Bowman](https://thepatronsaintofgin.com.au/)
+
+          Belinda started her gin journey in 2016, by joining an amazing gin club called Gin Lane, after years of loving gin. Inspired to meet the distillers behind the bottle, in 2017 she drove across Australia, from Gold Coast to Busselton and back, visiting as many distilleries as possible, and discovering new gins.
+          
+          This 12,000 kilometre journey was an amazing experience. She met the distillers, listened to their passion for their craft and learnt so much about making gin.
+
+          Reviving the general concept of meeting distillers and makers is what is part of the podcast. A new journey, this time with a little less fuel burning.
+
+      +block()
+        :marked
+          #### [Jan Persiel](https://gingingin.de/)
+
+          Jan began trying different gins in 2015 and figured that it would make sense to write down what he learned.
+          
+          So, in 2016 the blog [gingingin.de](https://gingingin.de) was created. First the publication was in German, but after starting to post to Instagram as well and discussing things with other gin enthusiasts from around the world in English the blog was turned to an English language version.
+
+          After publishing special notebooks for gin fans [Gin & Notes](https://gingingin.de/books), daring to start thinking about [other spirits](https://liquorlabs.tv), and not really getting the video idea out of his head, this podcast was a no-brainer to be started.
+
+  +section(true)
+    :marked
+      Thanks so much for your feedback and support! Should you have an idea how we can improve the show? We would love to hear how!
+
+      If you like the podcast, please do and tell your friends. And if you don't, … well, keep it to yourself :)

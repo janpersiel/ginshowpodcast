@@ -6,27 +6,26 @@ include /player/player.pug
 include /section/section.pug
 
 block vars
-  - const title = "UI engineering Podcast: Die Zusammenarbeit von Design und Entwicklung"
+  - const title = "The fabulous Gin.show Podcast: Let's talk juniper!"
   - const podcastFeedPath = "/podcast.xml"
   - const header = { title: "Podcast", type: "podcast" }
 
 block meta
-  meta(name="description" content="Im UI engineering Podcast geht es um die Zusammenarbeit von Design und Entwicklung.")
-  meta(name="keywords" content="uiengineering,podcast,design,frontend,entwicklung,css,styleguide,patternlibrary,atomicdesign,styletiles")
+  meta(name="description" content="A show about gin, distilling and making gin, botanicals, and other knowledge about this spirit.")
+  meta(name="keywords" content="gin,podcast,alcohol,cocktails,spirits,ethanol,distillery,distilling,juniper,cocktails,australia,germany,europe")
   link(href=podcastFeedPath rel="alternate" type="application/rss+xml")
 
 block main
   - const seasons = mvb.groupedArticles.bySeason.reverse()
   +section(true)
     :marked
-      ## Der UI engineering Podcast
+      ## The fabulous Gin.Show
 
-      Wir, das sind Dennis Reimann und Jan Persiel, setzen uns dafür ein, durch die enge Zusammenarbeit
-      von Design und Entwicklung schneller bessere und nachhaltigere Ergebnisse zu erzielen.
-      Im UI engineering Podcast geht es um Best Practices, Workflows und Tools die zu einem besseren
-      Miteinander von Design und Entwicklung beitragen.
+      Since 2016 we, Belinda and Jan, have been navigating the gin oceans and despite the fact that an annoying number of time-zones and oceans lay between them this podcast unites our mutual interest in promoting quality gins and sharing knowledge about distilleries.
+      
+      And yes we will try to get you excited about the gins we talk about. Cheers and Ginsalabim!
 
-    +cta("Abonnieren / XML", podcastFeedPath)(target="uie-feed")
+    +cta("Subscribe / XML", podcastFeedPath)(target="uie-feed")
 
   +section(true)
     h2 Aktuelle Episode

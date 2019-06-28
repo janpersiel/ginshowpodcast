@@ -4,7 +4,7 @@ title:
   required: true
 type:
   type: String
-  description: !markdown Typ des Headers, entscheidet über das Hintergrundbild. Bspw. `main`, `podcast`, `kontakt`.
+  description: !markdown Typ des Headers, entscheidet über das Hintergrundbild. Bspw. `main`, `podcast`, `contact`.
   required: true
 hero:
   type: Boolean

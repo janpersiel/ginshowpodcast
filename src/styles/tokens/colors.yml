@@ -19,8 +19,8 @@ aliases:
   colorBrandSecondaryQnD: &colorBrandSecondaryQnD "#131D2C"
 
   # Current brand colors
-  colorBrandPrimary: &colorBrandPrimary "#FF183E"
-  colorBrandSecondary: &colorBrandSecondary "#331833"
+  colorBrandPrimary: &colorBrandPrimary "#ff5a19"
+  colorBrandSecondary: &colorBrandSecondary "#57453f"
 
 props:
   # brand

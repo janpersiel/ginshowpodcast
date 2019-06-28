@@ -3,10 +3,10 @@ include _episode
 - const episodes = mvb.articles
 - const podcastsUrl = h.siteUrl("podcast.html", "http")
 - const lastUpdate = h.articles.lastUpdate(episodes)
-- const title = "UI engineering Podcast"
-- const names = "Jan Persiel und Dennis Reimann"
-- const email = "mail@uiengineering.de"
-- const description = "Wir, das sind Dennis Reimann und Jan Persiel, setzen uns dafür ein, durch die enge Zusammenarbeit von Design und Entwicklung schneller bessere und nachhaltigere Ergebnisse zu erzielen. Im UI engineering Podcast geht es um Best Practices, Workflows und Tools die zu einem besseren Miteinander von Design und Entwicklung beitragen. Impressum: http://www.uiengineering.de/kontakt.html"
+- const title = "The fabulous Gin.Show Podcast"
+- const names = "Belinda Bowman and Jan Persiel"
+- const email = "studio@gin.show"
+- const description = "The fabulous Gin Show is a podcast about Gin. Belinda Bowman (@thepatronsaintofgin) from Australia and Jan Persiel (@ginginginde) from Germany talk about botanicals, recipes, marketing, distilleries and invite distillers from around the globe to offer some insights into the juniper based spirit. Nerdism meets entertainment. Cheers! Impressum: https://gin.show/contact.html"
 
 doctype xml
 rss(xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" version="2.0")
@@ -17,9 +17,9 @@ rss(xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.co
     ttl 720
     title= title
     link= podcastsUrl
-    generator UI engineering Podcast Feed Generator v1.0.0
+    generator The Gin.Show Podcast Feed Generator v1.0.0
     docs http://blogs.law.harvard.edu/tech/rss
-    language de-DE
+    language en-uk
     copyright= names
     lastBuildDate= h.dateFormat.rfc822(lastUpdate)
     pubDate= h.dateFormat.rfc822(lastUpdate)
@@ -32,9 +32,9 @@ rss(xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.co
       link= podcastsUrl
     itunes:author= names
     itunes:summary= description
-    itunes:keywords uiengineering,UI engineering,Design,Development,Software,Entwicklung,Gestaltung,Interface,Web,Frontend,Responsive,JavaScript,JS,Elm,CSS,HTML,Mobile,PatternLab,Pattern Library,Styleguide,Styletiles
-    itunes:explicit clean
-    itunes:category(text="Technology")
+    itunes:keywords gin,juniper,distillery,spirits,alcohol,ethanol,australia,germany,uk,europe,us,oceania,botanicals,distiller,show,edutainment,drinks,cocktails,food,drinks,bartender,hamburg,goldcoast
+    itunes:explicit yes
+    itunes:category(text="Arts")
     itunes:owner
       itunes:name= names
       itunes:email= email

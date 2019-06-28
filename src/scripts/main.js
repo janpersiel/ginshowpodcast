@@ -1,5 +1,5 @@
-if (window.UIengineering.amplitude && window.Amplitude) {
-  window.Amplitude.init(window.UIengineering.amplitude)
+if (window.GinShow.amplitude && window.Amplitude) {
+  window.Amplitude.init(window.GinShow.amplitude)
 
   document.querySelector('.player__progress').addEventListener('click', function (e) {
     var offset = this.getBoundingClientRect()

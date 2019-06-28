@@ -8,4 +8,4 @@ children:
 - prototype
 ---
 
-Die Component Library für UIengineering.de.
+Die Component Library für Gin.show.
