@@ -4,6 +4,7 @@ include /wrap/wrap.pug
 
 mixin footer()
   footer.footer
+    div.logo
     +wrap()
       +container()
         +block().footer__block
@@ -18,12 +19,15 @@ mixin footer()
           :marked
             [Belinda Bowman](https://thepatronsaintofgin.com.au/)<br>
             The patron saint of gin<br>
+            Gold Coast<br>
             Australia
 
       .footer__legal
         :marked
-          This podcast is our collaboration to give you more insights into the world of gin. We bring you knowledge and insights, talk to distillers from around the globe and discuss things related to gin in a broader sense from bars to botanicals. Feel like giving us feedback or want to be on the show?
-          [Get in touch](/contact.html), we love to hear from you!
+          This podcast is our collaboration to give you more insights into the world of gin. We bring you knowledge and insights, talk to distillers from around the globe and discuss things related to gin in a broader sense from bars to botanicals.
+          
+          Feel like giving us feedback or want to be on the show?
+          [Get in touch](/contact.html), we would love to hear from you!
 
       .footer__imprint
         a(href="/impressum.html") Imprint

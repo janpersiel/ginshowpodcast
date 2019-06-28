@@ -15,3 +15,7 @@ props:
     value: 2.5em
   - name: spaceXXL
     value: 4em
+  - name: spaceXXXL
+    value: 8em
+  - name: spaceXXXXL
+    value: 16em
